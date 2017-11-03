@@ -10,31 +10,34 @@
              <link rel="stylesheet" href="resources/css/styles.css" type="text/css">
              <link rel="stylesheet" href="resources/css/queries.css " type="text/css">
              <link rel="stylesheet" href="vendors/css/ionicons.min.css" type="text/css">
+             <link rel="stylesheet" href="vendors/css/animate.css" type="text/css">
              <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
              <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="sticky-nav">
             <div class="row">
                 <img src="resources/css/images/logo-white.png" alt="TheTasties Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <img src="resources/css/images/logo.png" alt="TheTasties Logo" class="logo-black">
+                <ul class="main-nav js-main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#steps">How it Works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>The Tastie's</h1>
             <p class="slogan">We speak the good food language</p>
-            <a class="btn btn-full" href="#">I'm hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js-scroll-to-plan" href="#">I'm hungry</a>
+            <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js-section-features" id="features">
         <div class="row">
             <h2>Get Food Fast &mdash; Not Fast Food</h2>
             <p class="long-copy">
@@ -43,7 +46,7 @@
                 for you. We are really good at it. We Promise!.
             </p>
         </div>
-        <div class="row">
+        <div class="row js-animation-one">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite icon-big"></i>
                 <h3>Up to 365 Days/Year</h3>
@@ -118,13 +121,13 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/images/app-iPhone.png" alt="The Tastie's on iPhone" class="app-screen">
+                <img src="resources/images/app-iPhone.png" alt="The Tastie's on iPhone" class="app-screen js-animation-two">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="work-steps">
@@ -146,11 +149,11 @@
         </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js-animation-three">
             <div class="col span-1-of-4 box">
                 <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -249,13 +252,13 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js-section-plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js-animation-four">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ Month</span></p>
@@ -317,7 +320,7 @@
         </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="sign-up">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -406,6 +409,10 @@
             </p>
         </div>
     </footer>
+
+    <script src="vendors/js/jquery-3.2.1.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
 </body>
 </html>
