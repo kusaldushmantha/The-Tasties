@@ -1,0 +1,111 @@
+/* Larger Displays - 1024px - 1200px */
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row{ padding: 0 2%; }
+}
+
+/* iPAD and other Tabs in landscape mode - 787px-1023px */
+@media only screen and (max-width: 1023px){
+    body{ font-size: 18px;}
+
+    section{ padding: 60px 0; }
+
+    .long-copy{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .steps-box{ margin-top: 10px; }
+
+    .steps-box:last-child{ margin-top: 10px; }
+
+    .work-steps{ margin-bottom: 40px; }
+
+    .work-steps:last-of-type{ margin-bottom: 60px; }
+
+    .app-screen{ width: 50%}
+
+    .icon-small{
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    .city-features{ font-size: 90% }
+
+    .plan-box{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .plan-price{ font-size: 250% }
+
+    .contact-form{width: 80%;}
+}
+
+/* iPAD and Other TABs - 481px - 767px */
+@media only screen and (max-width: 767px){
+    body{ font-size: 16px}
+    section { padding: 30px 0 }
+
+    .row,
+    .hero-text-box { padding: 0.4% }
+
+    .col{
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    input[type=submit]{
+        margin-left: 25%;
+    }
+
+    .main-nav{ display: none }
+
+    h1{ font-size: 180% }
+    h2{ font-size: 150% }
+
+    .long-copy{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .steps-box:first-child{
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .steps-box:last-child{
+        margin-top: 20px;
+    }
+
+    .btn-app img{
+        margin-top: 20px ;
+        margin-left: 30px;
+    }
+
+    .app-screen{
+        width: 35%;
+    }
+
+    .work-steps div{
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-top: -5px;
+        padding: 7px;
+        font-size: 120%;
+    }
+
+    .work-steps{ margin-bottom: 20px}
+    .work-steps:last-of-type{ margin-bottom: 20px}
+}
+
+/* SMALL PHONES - 0-480px */
+@media only screen and (max-width: 480px){
+
+}
