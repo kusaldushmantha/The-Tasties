@@ -44,7 +44,7 @@ $(document).ready(function () {
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
                     $('html, body').animate({
-                        scrollTop: target.offset().top-20
+                        scrollTop: target.offset().top-17
                     }, 2000);
                 }
             }
@@ -84,5 +84,24 @@ $(document).ready(function () {
         }
 
     });
+
+    /* Maps */
+    var map = new GMaps({
+     div: '.map',
+     lat: 38.7436266,
+     lng: -9.157,
+     zoom: 17
+    });
+
+    map.addMarker({
+        lat: 38.7436266,
+        lng: -9.1602037,
+        title: 'Lisbon',
+        infoWindow:{
+            content: '<p>The Tastie&apos;s Lisbon HeadQuaters</p>'
+        }
+    });
+
+
 
 });

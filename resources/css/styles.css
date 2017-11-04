@@ -325,7 +325,7 @@ input[type=submit]:active{
 .steps-box:first-child{
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .steps-box:last-child{
@@ -335,6 +335,7 @@ input[type=submit]:active{
 
 .app-screen{
     width: 40%;
+    margin-bottom: 10px;
 }
 
 .work-steps{
@@ -510,7 +511,7 @@ blockquote:before{
 }
 
 .contact-form{
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -536,6 +537,30 @@ input[type=submit]{
 
 *:focus{
     outline-color: #e67e22;
+}
+
+.map{
+    width: 100%;
+    height: 500px;
+}
+
+.map-box{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 0;
+}
+
+.form-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    height: 500px;
+    padding-top: 20px;
+    width: 50%;
+
 }
 
 /*----------------FOOTER-------------*/
